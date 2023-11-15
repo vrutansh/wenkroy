@@ -78,3 +78,9 @@ html,body{
     letter-spacing: -3px;
 
 }
+
+.page1 video{
+    margin-top: 9vw;
+    width: 60%;
+    margin-left: 20%;
+}
