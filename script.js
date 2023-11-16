@@ -35,15 +35,31 @@ ScrollTrigger.refresh();
 
 init();
 
-gsap.to(".page1 h1", {
-  x:-80,
-  duration:1,
-  ScrollTrigger:{
-      trigger:".page1 h1",
-      scroller:".main",
-      start:"top 30%",
-      end:"top 0",
-      scrub:2
 
-  }
-})
+var tl = gsap.timeline({
+
+          scrollTrigger:{
+          trigger:".page1 h1",
+          scroller:".main",
+          start:"top 27%",
+          end:"top 0",
+          scrub:3
+
+        },
+});
+
+
+tl.to(".page1 h1", {
+  x:-100,
+  
+},"anim");
+
+tl.to(".page1 h2", {
+  x:100,
+
+},"anim");
+
+tl.to(".page1 video",{
+  width:"94%",
+},"anim")
+
