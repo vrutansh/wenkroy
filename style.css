@@ -87,3 +87,64 @@ html,body{
     left: 50%;
     transform: translate(-50%,0);
 }
+
+.page2{
+    min-height: 130vh;
+    width: 100%;
+    padding: 100px 5vw;
+  
+
+}
+
+.page2 h1{
+    font-family: pp mori;
+    font-size: 7.5vw;
+    font-weight: 900;
+    color:#111;
+
+}
+
+.page2-container{
+    height: 60vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 0 5vw; */
+}
+
+.page2-left{
+    /* background-color: aqua; */
+    width: 37%;
+}
+
+.page2-right{
+    /* background-color: aqua; */
+    width: 23%;
+}
+
+.page2-left h2{
+    font-family: pp mori;
+    font-size: 3.6vw;
+    font-weight: 100;
+    line-height: 4vw;
+    letter-spacing: -1px;
+    color:#111;
+}
+
+.page2-right p{
+    font-family: pp mori;
+    font-size: 1.5vw;
+    color: #111;
+}
+
+.page2-right button{
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+    padding: 4px 0;
+    color: #111;
+    background-color: #EDBFFF;
+    margin-top: 20px;
+}
