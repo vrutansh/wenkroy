@@ -242,11 +242,12 @@ html,body{
     width: 100%;
     position: relative;
     z-index: 9;
-    padding: 100px 100px;
+    padding: 130px 100px;
 }
 
 .elem{
     /* background-color: #111; */
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -268,7 +269,7 @@ html,body{
 }
 
 .elem img:nth-child(3){
-    right: 5%;
+    right: 4%;
 }
 
 .text-div{
@@ -278,13 +279,14 @@ html,body{
 }
 
 .elem h1{
-    color: #111;
+    color: rgb(227, 219, 219)797;
     font-size: 7vw;
+    font-weight: 500;
     transition: all ease-out 0.5s;
 }
 
 .elem:hover h1{
-    color: #EDBFFF;
+    color: #f01ed0;
     transform: translateY(-100%);
 
 }
