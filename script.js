@@ -1,3 +1,10 @@
+var crs = document.querySelector(".cursor")
+var main = document.querySelector(".main")
+main.addEventListener("mousemove", function(dets){
+    crs.style.left = dets.x + "px";
+    crs.style.top = dets.y + "px";
+})
+
 function init(){
   gsap.registerPlugin(ScrollTrigger);
 
@@ -32,9 +39,7 @@ ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 ScrollTrigger.refresh();
 
 }
-
 init();
-
 
 var tl = gsap.timeline({
 

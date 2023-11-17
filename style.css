@@ -11,6 +11,17 @@ html,body{
     height: 100%;
 }
 
+.cursor{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: fixed;
+    background-color: #EDBFFF;
+    z-index: 8;
+    mix-blend-mode: difference;
+    transition: left linear 0.1s top linear 0.1s;
+}
+
 .main{
     background-color:#0F0D0D;
 }
@@ -18,6 +29,8 @@ html,body{
 .page1{
    min-height: 100vh;
     width: 100%;
+    position: relative;
+    z-index: 9;
 }
 
 #nav{
@@ -93,6 +106,8 @@ html,body{
     width: 100%;
     padding: 100px 5vw;
     border-bottom: 2px solid #2e2b2b;
+    position: relative;
+    z-index: 9;
 
 }
 
@@ -150,10 +165,12 @@ html,body{
 }
 
 .page3{
-    min-height: 250vh;
+    min-height: 120vh;
     width: 100%;
     position: relative;
     padding-top: 65px;
+    z-index: 9;
+   
 
 }
 
@@ -167,21 +184,45 @@ html,body{
 .page3-part1{
     display: flex;
     align-items: flex-start;
-    justify-content: space-around;
-
+    justify-content: space-between;
+    white-space: nowrap;
+    
 }
 
 .page3-part1 img{
-    height: 600px;
-    width: 500px;
-    margin-top: 60px;
-
+    /* height: 600px;
+    width: 450px; */
+    margin-top: 30px; 
+    margin-right: 40px;
+    padding: 30px 60px;
+    margin: 50px 50px; 
+    height:460px;
+     /* margin-top: 160px; */
 }
 
-.page3-part2{
+.page3 button{
+    margin-left: 670px;
+    margin-right: 300px; 
+    background-color: #EDBFFF;
+    color: #111;
+    font-size: 19px;
+    padding: 20px 35px;
+    border-top-left-radius: 0px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: futura;
+    
+}
+
+.page3 button:hover{
+    background-color: #2e2b2b;
+    color: #fff;
+}
+/* .page3-part2{
     display: flex;
     align-items: flex-start;
-    justify-content: space-around;
+    justify-content:left;
 
 }
 
@@ -192,4 +233,55 @@ html,body{
     align-items: center;
     justify-content: center;
     margin-top: 60px;
+    margin-left: 150px;
+    
+} */
+
+.page4{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 9;
+    padding: 100px 100px;
+}
+
+.elem{
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.elem img{
+    position: absolute;
+    height: 300px;
+    width: 400px;
+    
+}
+
+.elem img:nth-child(1){
+    left: 0;
+}
+
+.elem img:nth-child(3){
+    right: 0;
+}
+
+.text-div{
+    background-color: aqua;
+    height: 139px;
+    overflow: hidden;
+}
+
+.elem h1{
+    font-size: 7vw;
+}
+
+.page5{
+    min-height: 100vh;
+    width: 100%;
+    background-color: rebeccapurple;
+    position: relative;
+    z-index: 9;
 }
